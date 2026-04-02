@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Minhaj | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    :root {
+      --bg: #f5f7f6;
+      --surface: #ffffff;
+      --text: #1d2830;
+      --muted: #5f6c72;
+      --accent: #0d8a78;
+      --border: #dde3e7;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Outfit", "Segoe UI", sans-serif;
+      color: var(--text);
+      background: linear-gradient(180deg, #eef4f1 0%, var(--bg) 100%);
+      padding: 1.2rem;
+      line-height: 1.6;
+    }
+
+    .container {
+      width: min(920px, 100%);
+      margin: 0 auto;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 1.4rem;
+      box-shadow: 0 12px 28px rgba(20, 43, 48, 0.09);
+    }
+
+    h1,
+    h2 {
+      font-family: "Space Grotesk", "Segoe UI", sans-serif;
+      margin-top: 0;
+    }
+
+    h2 {
+      margin-bottom: 0.4rem;
+      font-size: 1.2rem;
+    }
+
+    section {
+      padding: 0.7rem 0;
+      border-top: 1px solid var(--border);
+    }
+
+    section:first-of-type {
+      border-top: 0;
+    }
+
+    ul {
+      margin: 0.5rem 0 0;
+      padding-left: 1rem;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-top: 0.5rem;
+    }
+
+    .links a,
+    .home {
+      text-decoration: none;
+      padding: 0.5rem 0.9rem;
+      border-radius: 10px;
+      border: 1px solid var(--accent);
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .links a:hover,
+    .home:hover {
+      background: #e7f8f4;
+    }
+
+    .home {
+      display: inline-block;
+      margin-bottom: 0.8rem;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <a class="home" href="../index.html">Back to Showcase</a>
+    <h1>Minhaj</h1>
+
+    <section>
+      <h2>About Me</h2>
+      <p>
+        Aspiring developer exploring new Agentic AI
+      </p>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <ul>
+        <li>C Language</li>
+        <li>Python</li>
+        <li>GitHub Actions basics</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <ul>
+        <li>Centralised Digital Platform for Comprehensive student activity record in HEIs</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Contact Links</h2>
+      <div class="links">
+        <a href="https://github.com/shaikminhajbasha-art" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/minhaj-shaik-097674382/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
