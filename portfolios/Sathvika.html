@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sathvika Portfolio</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: white;
+  scroll-behavior: smooth;
+}
+
+/* NAVBAR */
+nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+
+nav h1 {
+  color: #38bdf8;
+}
+
+nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #38bdf8;
+}
+
+/* SECTIONS */
+section {
+  min-height: 100vh;
+  padding: 100px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* HERO */
+.hero h2 {
+  font-size: 3rem;
+}
+
+.hero span {
+  color: #38bdf8;
+}
+
+.hero p {
+  margin-top: 10px;
+  opacity: 0.8;
+  font-size: 1.2rem;
+}
+
+.btn {
+  margin-top: 25px;
+  padding: 12px 25px;
+  border-radius: 25px;
+  background: #38bdf8;
+  border: none;
+  color: black;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #38bdf8;
+}
+
+/* CARD */
+.card {
+  background: rgba(255,255,255,0.05);
+  padding: 30px;
+  border-radius: 20px;
+  max-width: 750px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* TAGS */
+.tags span {
+  display: inline-block;
+  background: #38bdf8;
+  color: black;
+  padding: 8px 15px;
+  margin: 8px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+/* CONTACT */
+.contact a {
+  display: block;
+  margin: 10px;
+  color: #38bdf8;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.contact a:hover {
+  transform: translateX(5px);
+}
+
+/* ANIMATION */
+.hidden {
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.8s ease;
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px) {
+  .hero h2 {
+    font-size: 2rem;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <h1>Portfolio</h1>
+  <div>
+    <a href="#hero">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#learning">Learning</a>
+    <a href="#strengths">Strengths</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero" class="hero">
+  <h2>Hello, I'm <span>Bakka Sathvika</span></h2>
+  <p>Student</p>
+  <button class="btn" onclick="scrollToSection('about')">Explore</button>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="hidden">
+  <div class="card">
+    <h2>About Me</h2>
+    <p>
+      I am a motivated student with a strong interest in technology and continuous learning.
+      I enjoy developing new skills, solving problems, and applying my knowledge to real-world situations.
+      I am adaptable, detail-oriented, and focused on growing both personally and professionally.
+    </p>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="hidden">
+  <div class="card">
+    <h2>Skills</h2>
+    <div class="tags">
+      <span>HTML</span>
+      <span>Python</span>
+    </div>
+  </div>
+</section>
+
+<!-- CURRENTLY LEARNING -->
+<section id="learning" class="hidden">
+  <div class="card">
+    <h2>Currently Learning</h2>
+    <div class="tags">
+      <span>Web Development</span>
+      <span>Data Structures</span>
+    </div>
+  </div>
+</section>
+
+<!-- STRENGTHS -->
+<section id="strengths" class="hidden">
+  <div class="card">
+    <h2>Strengths</h2>
+    <div class="tags">
+      <span>Quick Learner</span>
+      <span>Time Management</span>
+      <span>Detail-Oriented</span>
+      <span>Positive Mindset</span>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="hidden">
+  <div class="card">
+    <h2>Education</h2>
+    <p>Vidya Jyothi Institute of Technology</p>
+    <p>Data Science</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact hidden">
+  <div class="card">
+    <h2>Contact</h2>
+    <a href="mailto:reddysathvika07@gmail.com">Email</a>
+    <a href="https://github.com/reddysathvika07-web" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/b-sathvika-reddy-98bb4936a" target="_blank">LinkedIn</a>
+  </div>
+</section>
+
+<script>
+// Smooth scroll
+function scrollToSection(id) {
+  document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+}
+
+// Scroll animation
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    }
+  });
+});
+
+document.querySelectorAll('.hidden').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
